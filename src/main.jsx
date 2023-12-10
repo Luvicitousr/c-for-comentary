@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Routes } from 'react-router-dom'
+import { Pages } from "./pages";
 //import App from './App.jsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Routes />
+    <Pages />
   </React.StrictMode>,
 )

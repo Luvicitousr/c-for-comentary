@@ -1,13 +1,15 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import { Home } from './Home';
 import { NotFound } from './NotFound';
+import { Cadastro } from './Cadastro';
 
-export const Routes = () => (
+export const Pages = () => (
     <Router>
-      <Switch>
+      <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
-      </Switch>
+        <Route path="/cadastro" element={<Cadastro />} />
+      </Routes>
     </Router>
 );
